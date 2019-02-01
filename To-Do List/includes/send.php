@@ -1,6 +1,5 @@
 <?php
     require 'conn.php';
-    var_dump($_POST);
 try
 {
     $bdd->beginTransaction();
@@ -25,3 +24,5 @@ try
     echo 'Erreur : ' . $e->getMessage();
     $bdd->rollback();
 }
+
+header('Location: ../index.php');

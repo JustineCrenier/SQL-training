@@ -75,6 +75,8 @@ body {
       border: 1px solid black;
       color: white;
       padding: 5px 10px; }
+    body main div form .archive {
+      text-decoration: line-through; }
     body main form {
       margin-bottom: 1em; }
       body main form input {

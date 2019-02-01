@@ -20,7 +20,7 @@
 		</form>
 		<div class="todo">
 			<h2>Vos tâches à réaliser</h2>
-			<form action="#" method="POST">
+			<form action="includes/update.php" method="POST">
 				
 				<?php echo $tache; ?>
 
@@ -30,6 +30,13 @@
 		</div>
 		<div class="archive">
 			<h2>Vos tâches archivées</h2>
+
+			<form action="includes/update.php" method="POST">
+				
+				<?php echo $archive; ?>
+
+				<input type="submit" value="Supprimer" name="delete">
+			</form>
 		</div>
 	</main>
 </body>
