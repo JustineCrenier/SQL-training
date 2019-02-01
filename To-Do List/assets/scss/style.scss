@@ -1,0 +1,71 @@
+@import 'reset';
+@import 'var';
+
+// général
+
+*{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p, input, span, label{
+	font-family: $font;
+}
+
+// To-Do
+
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	header{
+		h1{
+			font-weight: 700;
+			font-size: 2em;
+			text-transform: uppercase;
+			margin-bottom: 0.5em;
+		}
+	}
+	main{
+		background-color: $primary;
+		padding: 1em;
+		max-height: 70vh;
+		overflow: hidden;
+
+		div{
+			h2{
+				font-size: 1em;
+				font-weight: 600;
+				margin-bottom: 1em;
+				text-decoration: underline;
+			}
+			div{
+				margin-bottom: 1em;
+			}
+			form{
+				input[type="submit"]{
+					background-color: black;
+					border: 1px solid black;
+					color: white;
+					padding: 5px 10px;
+				}
+			}
+		}
+
+		form{
+			margin-bottom: 1em;
+			input{
+				padding: 10px;
+			}
+			.tache{
+				border: 1px solid black;
+			}
+			.submit{
+				background-color: black;
+				border: 1px solid black;
+				color: white;
+			}
+		}
+	}
+}
